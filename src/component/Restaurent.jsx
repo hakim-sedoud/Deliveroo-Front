@@ -6,10 +6,7 @@ function Restaurent() {
 
   
     useEffect(() => {
-      // Effectuez ici votre requête GET pour récupérer les données du restaurant
-      // et mettez à jour l'état "restaurant" avec les données reçues
-  
-      // Exemple :
+
       const fetchData = async () => {
         try {
         const response = await fetch('https://site--deliveroo--8bd4m7bpgzgn.code.run');
