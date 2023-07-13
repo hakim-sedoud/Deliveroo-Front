@@ -40,20 +40,73 @@ header {
 .restaurantText p {
     font-size: 19px;
 }
-.menuItem {    
+
+.sousGeneralBloc {
     margin: 0 auto;
     max-width: 1200px;
     width: 96vw;
-
+    display: flex;
+    gap: 30px;
 }
 .categoryBloc {
     width: 820px;
     margin-bottom: 20px;
 }
-.panier {
+.panierV {
     width: 350px;
     height: 180px;
     border: 1px black solid;
+    position: sticky;
+    top: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.panierP {
+    width: 350px;
+    height: fit-content;
+    border: 1px black solid;
+    position: sticky;
+    top: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.panierVide {
+    border: none;
+    background-color: #bac3c3;
+    border-radius: 5px;
+    color: #8b9a9b;
+    width: 95%;
+    margin: 10px;
+    padding: 16px;
+    cursor: not-allowed
+}
+.divPanierVide {
+padding: 40px;
+text-align: center;
+}
+.PanierPlein {
+    border: none;
+    background-color: #00cdbd;
+    border-radius: 5px;
+    color: white;
+    width: 95%;
+    margin: 10px;
+    padding: 16px;
+}
+.divPanierPlein {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90px;
+}
+.panierP p {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
 }
 
 .menuItem h2{
@@ -69,7 +122,7 @@ header {
     gap: 20px;
 
 }
-.meals :hover {
+.meal:hover {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .meals {
@@ -81,7 +134,6 @@ header {
 
 }
 .mealDescription {
-    width: 225px;
     height: 35px;
     overflow: hidden;
     font-size: 17px;
@@ -100,14 +152,42 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 15px;
+    margin-left: 10px;
+    flex: 1;
 }
 .generalBloc {
     padding-top: 20px;
     display: flex;
-    flex-direction: column;
-    background-color: #f3f5f5;;
+    background-color: #f3f5f5;
+    justify-content: center;
+    gap: 25px;
+
 }
 h3 { 
     font-size: 19px;
+}
+.popular {
+    color: red;
+}
+.price {
+    display: flex;
+    gap: 20px;
+}
+.panierItem {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.panierItemInfos {
+    display: flex;
+    width: 270px;
+    justify-content: space-between;
+}
+.panierItemCounter {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.panierItemCounter button {
+    height: 20px;
 }
